@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(136, 126, 126, 0.596);
+    flex-direction: column;
+    }
+    .border{
+    background-color: #020200;
+    padding: 45px;
+    }
+    .padding{
+    background-color: #e00505;
+    padding: 45px;
+    }
+    .content{
+    background-color: #fffefe;
+    padding: 45px;
+    font-size: 78px;
+    }
+    #inputs{
+    display: flex;
+    flex-direction: row;
+    }
+    #sliders{
+    margin-right: 30px;
+    }
