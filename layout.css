@@ -1,5 +1,16 @@
+ html {
+    display: flex;
+ }
+
  body {
      background-color: #636668;
+     width: 100%;
+     margin: 0%;
+ }
+
+ img {
+    width:250px;
+    height:600p;
  }
 
  .wrapper {
@@ -15,7 +26,6 @@
  }
 
  span {
-     display: block;
      text-align: center;
      margin-top: -30px;
      color: #f1eded;
@@ -24,77 +34,72 @@
      font-weight: 500;
  }
 
- p {
-     font-size: 16px;
-     box-shadow: 0 0 20px rgb(255, 255, 255);
-     font-weight: 400;
-     text-align: center;
-     word-wrap: break-word;
-     line-height: 35px;
-     margin: 30px 0;
-     opacity: 0;
- }
 
- .fade {
+ /* .fade {
      opacity: 1;
      transition: opacity 0.1s;
- }
+ } */
 
- 
 
- /** div {
+
+ /* div {
      text-align: center;
      font-size: 30px;
      color: white;
      display: flex;
 
- } **/
+ } */
 
  .options {
      background-color: rgb(255, 255, 255);
-     float: left;
      align-items: left;
      justify-content: center;
      width: 15%;
-     height: 500px;
-     display: flex;
+     min-height: 100%;
+     float: left;
 
  }
 
  .content {
      background-color: rgb(133, 133, 61);
-     float: left;
      width: 85%;
-     height: 2000px;
-     justify-content: space-evenly;
-     align-items: flex-start;
-     display: flex;
+     height: 100%;
+     /* display:block; */
+     float: right;
+     text-align: center;
 
  }
 
- .picoptions {
-     padding-top: 25%;
- }
- button {
-    display: block;
-    font-size: 18px;
-    color: #e7e7ec;
-    font-weight: 500;
-    padding: 12px 25px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: #cf2828;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    outline: none;
-    height: 50px;
-    width: 100px;
+ .picformat {
+    align-self: center;
+    justify-self: center;
     
  }
 
- .specifyColor {
+ /* h1 {
+    background-image: url("https://www.gannett-cdn.com/presto/2018/11/08/USAT/6eeba0d5-e387-4cd1-80bc-740dd3586b07-XXX_E_COMING_ATTRACTIONS_06_WALKER.JPG?crop=1606%2C919%2Cx0%2Cy0&width=1200");
+ }*/ 
 
-    background-color: #000000;
+ .picoptions {
+    /* padding-top: 25%; */
+    /* padding-left: 42%; */
+    justify-self: center;
+ }
+
+ button {
+     display: block;
+     font-size: 18px;
+     color: #e7e7ec;
+     font-weight: 500;
+     padding: 12px 25px;
+     margin: 0 auto;
+     border-radius: 5px;
+     background-color: #cf2828;
+     border: none;
+     padding: 5px;
+     cursor: pointer;
+     outline: none;
+     height: 50px;
+     width: 100px;
 
  }
