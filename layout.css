@@ -1,37 +1,37 @@
  html {
-    display: flex;
+   display: flex;
  }
 
  body {
-     background-color: #636668;
-     width: 100%;
-     margin: 0%;
+   background-color: #faf8f8;
+   width: 100%;
+   margin: 0%;
  }
 
  img {
-    width:250px;
-    height:600p;
+   width: 250px;
+   height: 600p;
  }
 
  .wrapper {
-     width: 400px;
-     padding: 50px 40px;
-     background-color: #000000;
-     position: absolute;
-     transform: translate(-50%, -50%);
-     top: 50%;
-     left: 50%;
-     border-radius: 5px;
-     box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+   width: 400px;
+   padding: 50px 40px;
+   background-color: #020000;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   border-radius: 5px;
+   box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
  }
 
  span {
-     text-align: center;
-     margin-top: -30px;
-     color: #f1eded;
-     font-size: 25px;
-     font-family: sans-serif;
-     font-weight: 500;
+   text-align: center;
+   margin-top: -30px;
+   color: #050000;
+   font-size: 25px;
+   font-family: sans-serif;
+   font-weight: 500;
  }
 
 
@@ -51,55 +51,175 @@
  } */
 
  .options {
-     background-color: rgb(255, 255, 255);
-     align-items: left;
-     justify-content: center;
-     width: 15%;
-     min-height: 100%;
-     float: left;
+   background-color: rgb(0, 0, 0);
+   align-items: left;
+   justify-content: center;
+   width: 15%;
+   min-height: 100%;
+   float: left;
+   color: rgb(255, 255, 255);
+   
 
  }
 
  .content {
-     background-color: rgb(133, 133, 61);
-     width: 85%;
-     height: 100%;
-     /* display:block; */
-     float: right;
-     text-align: center;
+   background-color: rgb(255, 255, 255);
+   width: 85%;
+   height: fit-content;
+   /* display:block; */
+   float: right;
+   text-align: center;
 
  }
 
  .picformat {
-    align-self: center;
-    justify-self: center;
-    
+
+   background-image: url("/Chuck-Norris-Guns.jpg");
+   background-size: 100% 100%;
+   max-width: 30%;
+   /* background-repeat: no-repeat;
+   background-position: center; */
+   /* height: 400px;
+   width: 50%;
+   text-align: center; */
  }
 
- /* h1 {
-    background-image: url("https://www.gannett-cdn.com/presto/2018/11/08/USAT/6eeba0d5-e387-4cd1-80bc-740dd3586b07-XXX_E_COMING_ATTRACTIONS_06_WALKER.JPG?crop=1606%2C919%2Cx0%2Cy0&width=1200");
- }*/ 
+ /* .textoptions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ } */
 
- .picoptions {
-    /* padding-top: 25%; */
-    /* padding-left: 42%; */
-    justify-self: center;
- }
 
  button {
-     display: block;
-     font-size: 18px;
-     color: #e7e7ec;
-     font-weight: 500;
-     padding: 12px 25px;
-     margin: 0 auto;
-     border-radius: 5px;
-     background-color: #cf2828;
-     border: none;
-     padding: 5px;
-     cursor: pointer;
-     outline: none;
-     height: 50px;
-     width: 100px;
+   display: block;
+   font-size: 18px;
+   color: #e7e7ec;
+   font-weight: 500;
+   padding: 12px 25px;
+   margin: 0 auto;
+   border-radius: 5px;
+   background-color: #cf2828;
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+   outline: none;
+   height: 50px;
+   width: 100px;
 
+ }
+
+
+
+ #meme-canvas {
+   width: 300px;
+ }
+
+ .jokeformat {
+  /* max-height: inherit; */
+  padding-top: 70%;
+  padding-bottom: 10%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  align-items: center;
+  color: rgb(3, 0, 0);
+ }
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  width: 60px;
+  height: 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  align-items: center;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/* Code under here is code for toggling color scheme */
+
+
+
+.options.swap {
+  background-color: rgb(253, 253, 253);
+  align-items: left;
+  justify-content: center;
+  width: 15%;
+  min-height: 100%;
+  float: left;
+  color: rgb(0, 0, 0);
+
+}
+
+.content.swap {
+  background-color: rgb(0, 0, 0);
+  width: 85%;
+  height: 100%;
+  /* display:block; */
+  float: right;
+  text-align: center;
+
+}
+
+.jokeformat.swap {
+  /* max-height: inherit; */
+  padding-top: 70%;
+  padding-bottom: 10%;
+  align-items: center;
+  color: rgb(3, 0, 0);
  }
