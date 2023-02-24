@@ -15,16 +15,23 @@ colorswitch.addEventListener('change',e => {
         options.classList.remove('swap');
         content.classList.remove('swap');
         jokeformat.classList.remove('swap');
+
     }
         
 })
 
 
 
+
 const jokeContainer = document.getElementById("joke");
 const btn = document.getElementById("btn");
 const url = "https://api.chucknorris.io/jokes/random";
-let getJoke = () => {
+
+let getJoke = (e) => {
+    if (e) {
+        e.preventDefault();
+    }
+    
     jokeContainer.classList.remove("fade");
     fetch(url)
     .then(data => data.json())
@@ -34,5 +41,7 @@ let getJoke = () => {
         jokeContainer.classList.add("fade");
     });
 }
+
 btn.addEventListener("click",getJoke);
 getJoke();
+

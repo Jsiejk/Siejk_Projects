@@ -1,0 +1,50 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+
+   <title>Chuck's Jokes</title>
+
+   <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+   <div id="options" class="options">
+      <form class="optionsForm">
+         <h1>Toggle Color Mode</h1>
+         <br>
+         <br>
+         <label class="switch" id="colorswitch">
+            <input type="checkbox" unchecked>
+            <span class="slider round"></span>
+         </label>
+         <br>
+         <br>
+         <br>
+         <br>
+         <label for="select-number">Select a number of memes:</label>
+         <select number="select-number" id="select-number">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+            <option value="four">Four</option>
+         </select>
+         <br>
+         <br>
+         <br>
+         <br>
+         <button id="btn">Click for Joke!</button>
+
+
+      </form>
+   </div>
+   <div id="content" class="content">
+      <div class="picformat">
+         <h2 class=jokeformat id="joke"></h2>
+      </div>
+   </div>
+</body>
+<script src="function.js"></script>
+
+
+</html>
