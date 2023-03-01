@@ -10,37 +10,66 @@
 
 <body>
    <div id="options" class="options">
-      <form class="optionsForm">
-         <h1>Toggle Color Mode</h1>
+      <form class="optionsForm" onsubmit="return false;">
+         <fieldset>
+            <legend>Chuck's Options</legend>
+            <div>
+               <!-- TODO: text search for user -->
+               <label for="search-text">Search Meme Content:</label>
+               <input type="text" id="search-text">
+               <hr />
+
+               Select Number of Jokes:
+               <br>
+               <input type="radio" id="num1id" name="jokeNumber" value="1" checked>
+               <label for="num1id">One</label>
+
+               <input type="radio" id="num2id" name="jokeNumber" value="2">
+               <label for="num2id">Two</label>
+
+               <input type="radio" id="num3id" name="jokeNumber" value="3">
+               <label for="num3id">Three</label>
+
+               <input type="radio" id="num4id" name="jokeNumber" value="4">
+               <label for="num4id">Four</label>
+               <hr />
+               <button id="btn" type="submit">Click for Joke!</button>
+            </div>
+         </fieldset>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <div>Toggle Color Mode</div>
          <br>
          <br>
          <label class="switch" id="colorswitch">
-            <input type="checkbox" unchecked>
+            <input type="checkbox" unchecked />
             <span class="slider round"></span>
          </label>
-         <br>
-         <br>
-         <br>
-         <br>
-         <label for="select-number">Select a number of memes:</label>
-         <select number="select-number" id="select-number">
-            <option value="one">One</option>
-            <option value="two">Two</option>
-            <option value="three">Three</option>
-            <option value="four">Four</option>
-         </select>
-         <br>
-         <br>
-         <br>
-         <br>
-         <button id="btn">Click for Joke!</button>
-
-
       </form>
    </div>
    <div id="content" class="content">
       <div class="picformat">
          <h2 class=jokeformat id="joke"></h2>
+      </div>
+      <div class="picformat">
+         <h2 class=jokeformat id="joke2"></h2>
+      </div>
+      <div class="picformat">
+         <h2 class=jokeformat id="joke3"></h2>
+      </div>
+      <div class="picformat">
+         <h2 class=jokeformat id="joke4"></h2>
       </div>
    </div>
 </body>

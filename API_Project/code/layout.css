@@ -34,6 +34,10 @@
    font-weight: 500;
  }
 
+ h2 {
+  text-shadow: #ccc 1px 0 10px;
+ }
+
 
  /* .fade {
      opacity: 1;
@@ -69,7 +73,9 @@
    /* display:block; */
    float: right;
    text-align: center;
-
+   display: grid;
+   /* grid-template-columns: repeat(2, 1fr); */
+   gap: 10px
  }
 
  .picformat {
@@ -77,21 +83,34 @@
    background-image: url("/Chuck-Norris-Guns.jpg");
    background-size: 100% 100%;
    max-width: 30%;
-   /* background-repeat: no-repeat;
-   background-position: center; */
-   /* height: 400px;
-   width: 50%;
-   text-align: center; */
  }
 
- /* .textoptions {
-  position: absolute;
-  bottom: 0;
-  left: 0;
- } */
+ /* .picformat2 {
 
+  background-image: url("/Chuck-Norris-Guns.jpg");
+  background-size: 100% 100%;
+  max-width: 30%;
+  visibility: hidden;
+ }
+ 
+.picformat3 {
 
- button {
+   background-image: url("/Chuck-Norris-Guns.jpg");
+   background-size: 100% 100%;
+   max-width: 30%;
+   visibility: hidden;
+}
+
+.picformat4 {
+
+  background-image: url("/Chuck-Norris-Guns.jpg");
+  background-size: 100% 100%;
+  max-width: 30%;
+  visibility: hidden;
+} */
+
+ 
+   button {
    display: block;
    font-size: 18px;
    color: #e7e7ec;
@@ -190,7 +209,6 @@ input:checked + .slider:before {
 }
 
 
-
 /* Code under here is code for toggling color scheme */
 
 
@@ -223,3 +241,18 @@ input:checked + .slider:before {
   align-items: center;
   color: rgb(3, 0, 0);
  }
+
+
+ /* Meme 1-4
+
+ .joke2 {
+  display: none;
+ }
+
+ .joke3 {
+  display: none;
+ }
+
+ .joke4 {
+  display: none;
+ } */
