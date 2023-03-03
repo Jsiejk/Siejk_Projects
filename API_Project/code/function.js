@@ -1,9 +1,11 @@
 const colorswitch = document.getElementById('colorswitch');
 const options = document.getElementById('options');
 const content = document.getElementById('content');
+const container = document.getElementById("container");
 let jokeformat = document.getElementById('joke1');
 let jokeContainer = document.getElementById("joke1");
 const btn = document.getElementById("btn");
+let picContainer = document.getElementById("pic1")
 
 console.log(document.querySelector('input[name="jokeNumber"]'));
 // const form = document.getElementById("form");
@@ -16,13 +18,16 @@ colorswitch.addEventListener('change', e => {
 
     if (isChecked) {
         options.classList.add('swap');
-        content.classList.add('swap');
+        content.classList.add('swap'); joke4
         jokeformat.classList.add('swap');
+        container.classList.add('swap');
+
     }
     else {
         options.classList.remove('swap');
         content.classList.remove('swap');
         jokeformat.classList.remove('swap');
+        container.classList.remove('swap');
     }
 
 })
@@ -46,6 +51,7 @@ const getRandom = (arr) => {
 
 
 const getJoke = async (e) => {
+
     const userSearch = document.getElementById("search-text").value;
     let url = 'https://api.chucknorris.io/jokes/search?query=Chuck';
 
@@ -56,6 +62,14 @@ const getJoke = async (e) => {
     // Prevent the webpage from reloading on submit
     if (e) {
         e.preventDefault();
+        joke1.textContent = "";
+        joke2.textContent = "";
+        joke3.textContent = "";
+        joke4.textContent = "";
+        pic1.classList.add('d-none');
+        pic2.classList.add('d-none');
+        pic3.classList.add('d-none');
+        pic4.classList.add('d-none');
     }
 
     // jokeContainer.classList.remove("fade");
@@ -96,16 +110,19 @@ const getJoke = async (e) => {
         console.log(numofJokes);
 
         // if they asked for more jokes than there are, don't do anything
-        if (filtered?.length < numofJokes) {
+        if ((filtered?.length < numofJokes) || (userSearch.length < 4 && userSearch.length != 0)) {
             console.error('Not enough jokes!')
-            jokeContainer.textContent = "Not enough jokes. Please try again!"
+            jokeContainer.textContent = "Please try a new search. Searches must be over 3 characters and be a real word."
         }
         else {
             for (let i = 0; i < numofJokes; i++) {
+                picContainer = document.getElementById(`pic${i + 1}`);
+                picContainer.classList.remove('d-none');
                 jokeContainer = document.getElementById(`joke${i + 1}`);
                 console.log(jokeContainer);
                 const item = getRandom(filtered);
                 console.log(item);
+                console.log(picContainer);
                 jokeContainer.textContent = `${item.value}`;
                 // filtered.remove(item);
             }
