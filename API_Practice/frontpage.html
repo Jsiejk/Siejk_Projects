@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Chuck's Jokes</title>
+   <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+   <main id="container" class="grid">
+      <form class="optionsForm flex column" id="options" onsubmit="return false;">
+         <fieldset class="flex column flexbig">
+            <legend>Chuck's Options</legend>
+            <!-- TODO: text search for user -->
+            <div>
+               <label for="search-text">Search Meme Content:</label>
+               <input type="text" id="search-text">
+            </div>
+            <div>
+               Select Number of Jokes:
+               <div>
+                  <input type="radio" id="num1id" name="jokeNumber" value="1">
+                  <label for="num1id">One</label>
+
+                  <input type="radio" id="num2id" name="jokeNumber" value="2">
+                  <label for="num2id">Two</label>
+
+                  <input type="radio" id="num3id" name="jokeNumber" value="3">
+                  <label for="num3id">Three</label>
+
+                  <input type="radio" id="num4id" name="jokeNumber" value="4">
+                  <label for="num4id">Four</label>
+               </div>
+            </div>
+            <button id="btn" type="submit">Click for Joke!</button>
+         </fieldset>
+         <div class="flexbig"></div>
+         <div>
+            <label class="switch" for="colorswitch">Toggle Color Mode</label>
+            <input id="colorswitch" type="checkbox" unchecked />
+            <span class="slider round"></span>
+         </div>
+      </form>
+      <div id="content" class="content flex row">
+         <div class="picformat d-none" id="pic1">
+            <img src="/Chuck-Norris-Guns.jpg" />
+            <h2 class=jokeformat id="joke1"></h2>
+         </div>
+         <div class="picformat d-none" id="pic2">
+            <img src="/Chuck-Norris-Guns.jpg" />
+            <h2 class=jokeformat id="joke2"></h2>
+         </div>
+         <div class="picformat d-none" id="pic3">
+            <img src="/Chuck-Norris-Guns.jpg" />
+            <h2 class=jokeformat id="joke3"></h2>
+         </div>
+         <div class="picformat d-none" id="pic4">
+            <img src="/Chuck-Norris-Guns.jpg" />
+            <h2 class=jokeformat id="joke4"></h2>
+         </div>
+      </div>
+   </main>
+   <script src="function.js"></script>
+</body>
+
+</html>
