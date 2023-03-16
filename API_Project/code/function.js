@@ -135,3 +135,4 @@ const getJoke = async (e) => {
 
 
 btn.addEventListener("click", getJoke);
+
