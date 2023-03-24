@@ -15,5 +15,9 @@
     "Practice"
   ],
   "author": "Jared Siejk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/svelte": "^3.2.2",
+    "c8": "^7.13.0"
+  }
 }
